@@ -10,7 +10,7 @@ export class Search extends Component {
                                 <input type="text" className="form-control" placeholder="Search..." 
                                     aria-label="Recipient's username" aria-describedby="basic-addon2"></input>
                                 <div className="input-group-append">
-                                <span className="input-group-text" id="basic-addon2">Find</span>
+                                <span className="input-group-text " id="basic-addon2">Find</span>
                                 </div>
                             </div>
                     </div>

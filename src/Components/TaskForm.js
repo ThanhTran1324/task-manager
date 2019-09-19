@@ -40,10 +40,22 @@ export class TaskForm extends Component {
     }
     onSubmit = (event) =>{
         event.preventDefault();
-        console.log(this.state);
-        this.props.onReceive(this.state);
-        this.onClear();
-        this.onCloseForm();
+        
+        if(this.state.name==='' || this.state.status==='')
+        {
+            this.onClear();
+            this.onCloseForm();
+        }
+        else
+        {
+            this.props.onReceive(this.state);
+            this.onClear();
+            this.onCloseForm();
+        }
+        
+        //console.log(this.state);
+        
+       
        
 
     }

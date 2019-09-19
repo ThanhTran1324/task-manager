@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import randomString from "randomstring";
 import Search from './Components/Search';
 import TaskForm from './Components/TaskForm';
 import Control from './Components/Control';
@@ -162,23 +162,29 @@ export class App extends Component {
             <div className={this.state.isDisplayForm===true ? "col-xs-4 col-md-4  col-lg-4 " : ""} >
                 {elmTaskForm}
             </div>
-            <div className={this.state.isDisplayForm===true ? "col-xs-8 col-md-8 col-lg-8 " : "col-xs-12 col-md-12 col-lg-12 "}>
+            <div className={this.state.isDisplayForm===true ? "col-xs-8 col-md-8 col-lg-8 " : "col-xs-12 col-md-12 col-lg-12"}>
                 
                 <p>
-                    <button className="btn btn-primary" type="button" onClick={this.ChangeDisplay} aria-expanded="false"
+                    <button className="btn btn-success" type="button" onClick={this.ChangeDisplay} aria-expanded="false"
                             aria-controls="contentId">
                         Add
                     </button>
-                    <button className="btn btn-danger" onClick={this.generateDate} type="button"  aria-expanded="false">
+                    <button className="btn btn-danger ml-3" onClick={this.generateDate} type="button"  aria-expanded="false">
                         Generate Data
                     </button>
                 </p>
                 <div className="row">
-                    <Search />
-                    <Sort />
+                    
+                        <div className="col-xs-12 col-md-6">
+                            <Search />
+                        </div>
+                        <div className="col-xs-12 col-md-6">
+                            <Sort />
+                        </div> 
+                    
                 </div>
                 
-                <div className="row">
+                <div className="row mt-3">
                     <Control 
                         changeStatus={this.changeStatus} 
                         tasks={tasks}
