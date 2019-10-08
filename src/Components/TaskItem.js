@@ -16,7 +16,7 @@ export class TaskItem extends Component {
         var {task , index }=this.props;
         return (
             
-                <tr>
+                <tr >
                             
                             <td>{index+1}</td>
                             <td>{task.name}</td>

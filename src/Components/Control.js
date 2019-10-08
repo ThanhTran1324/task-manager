@@ -14,8 +14,8 @@ export class Control extends Component {
                     />;
         });
         return (
-            <div className="container-fluid">
-                <table className="table table-bordered">
+            <div className="container ">
+                <table className="table table-bordered table-striped ">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -24,7 +24,7 @@ export class Control extends Component {
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         <tr>
                             <td ></td>
                             <td>    
