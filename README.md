@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HomePage: https://thanhtran1324.github.io/task-manager/
 
 ## Available Scripts
 
